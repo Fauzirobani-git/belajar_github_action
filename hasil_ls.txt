@@ -1,0 +1,3 @@
+drwxrwxrwx 3 fauzi fauzi 4096 Feb 25 09:50 SharedFolder
+drwxr-xr-x 2 fauzi fauzi 4096 Feb 22 21:08 Templates
+drwxr-xr-x 2 fauzi fauzi 4096 Feb 22 21:08 Videos
