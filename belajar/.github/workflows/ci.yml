@@ -1,0 +1,27 @@
+name: CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Menjalankan di Ubuntu terbaru
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Checkout repository ke runner
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Menggunakan versi Node.js 14
+
+      - name: Install dependencies
+        run: npm install  # Install dependencies menggunakan npm
+
+      - name: Run tests
+        run: npm test  # Jalankan test dengan npm
